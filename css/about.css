@@ -16,3 +16,6 @@ pre {
     font-size: 0.9rem;
     background-color: rgba(200, 250, 225, 50%);
 }
+.label-emphasis {
+    font-weight: bold;
+}

@@ -140,7 +140,7 @@ document.getElementById('main-menu-switch').addEventListener('click', function (
             // no need to display submenu-switch, because it is always visible when main-menu is
             // visible, horizontal or vertical
             document.getElementById('main-menu-list').style.display = "block";
-// *** see lines 60-61 for info on height="17em"
+// *** see lines 120-121 for info on height="17em"
             document.getElementById('main-menu').style.height = "17em";
             document.getElementById('i-can-transform').classList.remove('pure-menu-horizontal');
             document.getElementById('main-menu-switch').classList.add('x-shape');
@@ -175,7 +175,7 @@ document.getElementById('main-menu-switch').addEventListener('click', function (
 // used in window.addEventListener and window.onunload statements near top
 function closeVisible() {
     document.getElementById('submenu').style.display = 'none';
-// *** see lines 53-54 for info on height="2.1em"
+// *** see lines 113-114 and 156-157 for info on height="2.1em"
     document.getElementById('main-menu').style.height = "2.1em";
     document.getElementById('main-menu-switch').classList.remove('x-shape');
     if (!mediaVar.matches) {

@@ -30,18 +30,18 @@
                 <ul id="main-menu-list" class="pure-menu-list">
                     <li class="pure-menu-item"><a class="pure-menu-link" href="full-set-pure.html">Full Set PureCSS</a>
                     </li>
-                    <li class="pure-menu-item"><a class="pure-menu-link" href="page-b.html">Page Alpha</a></li>
-                    <li class="pure-menu-item"><a class="pure-menu-link" href="page-b.html">Page Beta</a></li>
-                    <li class="pure-menu-item"><a class="pure-menu-link" href="page-b.html">Page Gamma</a></li>
+                    <li class="pure-menu-item"><a class="pure-menu-link" href="index.html">Page Alpha</a></li>
+                    <li class="pure-menu-item"><a class="pure-menu-link" href="index.html">Page Beta</a></li>
+                    <li class="pure-menu-item"><a class="pure-menu-link" href="index.html">Page Gamma</a></li>
                     <li class="submenu-heading pure-menu-item">
                         <span class="pure-menu-link" id="submenu-switch">More</span>
                         <ul class="pure-menu-list" id="submenu">
                             <li class="submenu-item pure-menu-item"><a class="submenu-link pure-menu-link"
-                                    href="page-b.html">Page Delta</a></li>
+                                    href="index.html">Page Delta</a></li>
                             <li class="submenu-item pure-menu-item"><a class="submenu-link pure-menu-link"
-                                    href="page-b.html">Page Epsilon</a></li>
+                                    href="index.html">Page Epsilon</a></li>
                             <li class="submenu-item pure-menu-item"><a class="submenu-link pure-menu-link"
-                                    href="page-b.html">Page Zeta</a></li>
+                                    href="index.html">Page Zeta</a></li>
                         </ul>
                     </li>
                     <li class="pure-menu-item"><a class="pure-menu-link bandwidth-switch" href="about.html">About
@@ -65,7 +65,8 @@
                 <p class="shrink">Any combination of open menus and window sizes will collapse to closed if the window
                     size is changed, if the screen
                     orientation is changed, if you navigate to another page, or if you use the browser's forward or back
-                    button to leave the page.
+                    button to leave the page. It is necessary to have at least two pages to fully test the menu behavior and 
+                    script to assess the issues around navigation/back/forward behavior.
                 </p>
                 <h3>Compatibility</h3>
                 <p class="shrink">As far as I can tell, this website works the same across all tested browsers (except
@@ -244,8 +245,8 @@
 
             <section>
                 <h2>CSS:</h2>
-                <p class="shrink">The following code is located in a file at <a
-                        href="css/combined-styles-eb.css">https://www.cooperdozier.com/css/combined-styles-eb.css</a>.
+                <p class="shrink">The following code is located in a file <a
+                        href="css/combined-styles-eb.css">here</a>.
                     It should be referenced second in the HTML &lt;head&gt; tag, after the purecss-extra-basic.css shown
                     below.</p>
                 <pre>
@@ -378,8 +379,8 @@ since then. later declarations are my creation */
 
                 <hr>
                 <h2>More CSS:</h2>
-                <p class="shrink">The following code is located in a file at <a
-                        href="css/purecss-extra-basic.css">https://www.cooperdozier.com/css/purecss-extra-basic.css</a>.
+                <p class="shrink">The following code is located in a file <a
+                        href="css/purecss-extra-basic.css">here</a>.
                     It should be listed first in the HTML &lt;head&gt; tag, before the combined-styles-eb.css shown
                     above.</p>
                 <pre>
@@ -399,6 +400,8 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 
 /* This is an extraction of purecss.io's Pure CSS Framework, to include just what I needed */
 /* The foundational layer of Pure CSS is Normalize.css. I think the stuff above Pure CSS Base / .pure-img is from Normalize */
+
+/* ::::: Normalize.css ::::: */
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%
@@ -444,8 +447,9 @@ html {
 	display: none!important
 }
 
+
 /* Pure CSS base */
-/* img not actually in use in extra-basic example except creative commons icon */
+/* pure-img not actually in use in extra-basic example except creative commons icon */
 .pure-img {
 	max-width: 100%;
 	height: auto;
@@ -616,6 +620,37 @@ or floats?
 	}
 }
                 </pre>
+
+                <hr>
+                <h2>FYI: CSS used only on this page, not really relevant to the menu:</h2>
+                <p class="shrink">The following code is located in a file <a
+                        href="css/about.css">here</a>.
+                    It would be listed last in the HTML &lt;head&gt; tag, after the combined-styles-eb.css shown
+                    above.</p>
+<pre>
+/* style for about page unrelated to working example */
+.sixty-em-one-column {
+    max-width: 60em;
+    margin: auto;
+}
+pre {
+    white-space: pre-wrap;
+}
+.shrink {
+    padding: 0em;
+    margin: 0.5em 0.75em;
+    font-size: 1rem;
+}
+.emphasis {
+    padding: .3em;
+    font-size: 0.9rem;
+    background-color: rgba(200, 250, 225, 50%);
+}
+.label-emphasis {
+    font-weight: bold;
+}
+</pre>
+
             </section>
 
             <hr>
@@ -623,16 +658,16 @@ or floats?
 
             <section>
                 <h2>JavaScript:</h2>
-                <p class="shrink">The following code is located in a file at <a
-                        href="js/from-scratch-menu.js">https://www.cooperdozier.com/js/from-scratch-menu.js</a>.
+                <p class="shrink">The following code is located in a file <a
+                        href="js/from-scratch-menu.js">here</a>.
                     I put the &lt;script&gt; tag inside the &lt;head&gt; tag. A lot of sites tell you to put your script
                     tags at the end of the &lt;body&gt; below
                     the content, so the page load isn't slowed by them. I have never had a problem with that with the
                     very lightweight pages I do though. Plus
                     this script has to do with the top-of-page design, not some under the hood data harvesting or CMS
                     engine stuff. A copy with comments, explanations, and
-                    instructions is located in a file at <a
-                        href="js/from-scratch-menu-annotated.js">https://www.cooperdozier.com/js/from-scratch-menu-annotated.js</a>.
+                    instructions is located in a file <a
+                        href="js/from-scratch-menu-annotated.js">here</a>.
                 </p>
                 <pre>
 // Annotated copy at https://www.savetheoxygen.org/js/from-scratch-menu-annotated.js

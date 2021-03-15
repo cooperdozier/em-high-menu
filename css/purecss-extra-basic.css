@@ -14,6 +14,8 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 
 /* This is an extraction of purecss.io's Pure CSS Framework, to include just what I needed */
 /* The foundational layer of Pure CSS is Normalize.css. I think the stuff above Pure CSS Base / .pure-img is from Normalize */
+
+/* ::::: Normalize.css ::::: */
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%
@@ -59,8 +61,9 @@ html {
 	display: none!important
 }
 
+
 /* Pure CSS base */
-/* img not actually in use in extra-basic example except creative commons icon */
+/* pure-img not actually in use in extra-basic example except creative commons icon */
 .pure-img {
 	max-width: 100%;
 	height: auto;
